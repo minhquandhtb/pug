@@ -1,4 +1,14 @@
+$text--color-1:#ffffff;
+$text--color-2:#333333;
+$primary-font: arial;
 body {
   background-image: url(images/sun-banner.jpg);
-  background-size:100%;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+  
 }
+
+@import "scss/header";
+@import "scss/main";
