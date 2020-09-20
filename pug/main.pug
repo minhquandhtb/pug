@@ -19,24 +19,16 @@ main.main-content
     section.section-client
         h4 khách hàng tiêu biểu
         .slide
-            .slide__item
-                img(src="/images/logo_top_adways.png", alt="logo")
-                img(src="/images/logo_top_altplus.png", alt="logo")
-            .slide__item
-                img(src="/images/logo_top_comnico.png", alt="logo")
-                img(src="/images/logo_top_cuon.png", alt="logo")
-            .slide__item
-                img(src="/images/logo_top_hobonichi.png", alt="logo")
-                img(src="/images/logo_top_mangania.png", alt="logo")
-            .slide__item
-                img(src="/images/logo_top_mindpalette.png", alt="logo")
-                img(src="/images/logo_top_open8.png", alt="logo")
-            .slide__item
-                img(src="/images/logo_top_teamlab.png", alt="logo")
-                img(src="/images/logo_top_uzabase.png", alt="logo")
-            .slide__item
-                img(src="/images/logo_top_valuecommerce.png", alt="logo")
-                img(src="/images/logo_top_verbe.png", alt="logo")
+            mixin image(link1, link2)
+                .slide__item
+                    img(src=link1, alt="logo")
+                    img(src=link2, alt="logo")
+            +image('/images/logo_top_adways.png','/images/logo_top_altplus.png')
+            +image('/images/logo_top_comnico.png','/images/logo_top_cuon.png')
+            +image('/images/logo_top_hobonichi.png','/images/logo_top_mangania.png')
+            +image('/images/logo_top_mindpalette.png','/images/logo_top_open8.png')
+            +image('/images/logo_top_teamlab.png','/images/logo_top_uzabase.png')
+            +image('/images/logo_top_valuecommerce.png','/images/logo_top_verbe.png')
 
     section.section-statistic
     section.section-team
