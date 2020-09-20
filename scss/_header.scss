@@ -41,4 +41,17 @@
     padding: 10px;
     color: $text--color-1;
   }
-  .l
+
+  @media screen and(max-width:600px){
+    .wrapper{
+      flex-direction: column;
+    }
+    .header-right{
+      flex-direction: column;
+      
+    }
+    .header-right>*{
+      margin: 10px;
+    }
+    
+  }
