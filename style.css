@@ -1,5 +1,5 @@
 body {
-  background-image: url(images/sun-banner.jpg);
+  background-image: url("images/sun-banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -124,7 +124,7 @@ body {
 }
 
 .section-vision {
-  background-image: url(images/sun-vision.jpg);
+  background-image: url("images/sun-vision.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -233,7 +233,9 @@ body {
 
 footer {
   height: 500px;
-  background-image: url(/images/footer.png);
+  background-image: url("images/footer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
 }
 

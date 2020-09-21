@@ -1,10 +1,13 @@
-$text--color-1:#ffffff;
-$text--color-2:#333333;
+$text--color-1: #ffffff;
+$text--color-2: #333333;
 $primary-font: arial;
-body {
-  background-image: url(images/sun-banner.jpg);
-  background-size:cover;
+@mixin background($url) {
+  background-image: url($url);
+  background-size: cover;
   background-repeat: no-repeat;
+}
+body {
+  @include background("images/sun-banner.jpg");
   background-attachment: fixed;
   margin: 0px;
 }

@@ -1,6 +1,6 @@
 footer {
   height: 500px;
-  background-image: url(/images/footer.png);
+  @include background("images/footer.png");
   color: white;
 }
 .footer {
@@ -19,13 +19,14 @@ footer {
   margin-left: 50px;
 }
 
-@media screen and(max-width:600px){
-    .footer{
-        &__content>div{
-            flex-basis: 40%;
-        }
+@media screen and(max-width:600px) {
+  .footer {
+    &__content > div {
+      flex-basis: 40%;
     }
-    footer{
-        height: 600px;
-    }
+  }
+  footer {
+    height: 600px;
+  }
 }
+
