@@ -4,15 +4,14 @@
   align-items: center;
 }
 .article-intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #ffffff;
+  @extend .main-content;
+  color: $text--color-1;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 28px;
   text-align: center;
   max-width: 80%;
   height: 600px;
+  padding-top: 200px;
   align-self: center;
   &__content {
     width: 85%;
@@ -30,33 +29,29 @@
   padding-top: 100px;
   padding-bottom: 300px;
   &__content {
+    @extend .main-content;
     text-align: center;
-    color: #ffffff;
+    color: $text--color-1;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
     max-width: 60%;
   }
   &__content > h4 {
     border-style: solid;
     border-width: 2px;
-    border-color: white;
+    border-color: $text--color-1;
     width: 25%;
     text-transform: uppercase;
     padding: 5px;
   }
 }
 .section-client {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
+  @extend .main-content;
+  background-color: $text--color-1;
   align-self: stretch;
   & > h4 {
-    border: solid 2px black;
+    border: solid 2px $text--color-2;
+    color: $text--color-2;
     text-transform: uppercase;
     padding: 5px 30px;
     font-size: 20px;
@@ -68,7 +63,6 @@
   overflow: hidden;
   max-width: 80%;
   &__item > img {
-    
     display: block;
     margin: 50px;
     position: relative;
@@ -91,15 +85,15 @@
   }
 }
 
-@media screen and(max-width:600px){
-  .article-intro{
+@media screen and(max-width:600px) {
+  .article-intro {
     font-size: 22px;
-    &__content{
+    &__content {
       font-size: 14px;
     }
   }
-  .section-vision{
-    &__content>h4{
+  .section-vision {
+    &__content > h4 {
       width: 50%;
     }
   }
