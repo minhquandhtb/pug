@@ -1,6 +1,6 @@
 $text--color-1: #ffffff;
 $text--color-2: #333333;
-$primary-font: arial;
+$primary-font: Arial, Helvetica, sans-serif;
 @mixin background($url) {
   background-image: url($url);
   background-size: cover;
@@ -10,6 +10,7 @@ body {
   @include background("images/sun-banner.jpg");
   background-attachment: fixed;
   margin: 0px;
+  font-family: $primary-font;
 }
 @import "scss/header";
 @import "scss/main";

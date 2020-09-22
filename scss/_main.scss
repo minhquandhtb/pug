@@ -3,10 +3,14 @@
   flex-direction: column;
   align-items: center;
 }
+.title {
+    border-style: solid;
+    border-width: 2px;
+    text-transform: uppercase;
+}
 .article-intro {
   @extend .main-content;
   color: $text--color-1;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 28px;
   text-align: center;
   max-width: 80%;
@@ -30,16 +34,15 @@
     @extend .main-content;
     text-align: center;
     color: $text--color-1;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     max-width: 60%;
   }
   &__content > h4 {
     border-style: solid;
     border-width: 2px;
+    text-transform: uppercase;
     border-color: $text--color-1;
     width: 25%;
-    text-transform: uppercase;
     padding: 5px;
   }
 }
@@ -71,6 +74,45 @@
     animation-direction: alternate;
   }
 }
+.section-activity{
+  @extend .main-content;
+  color: $text--color-1;
+  max-width: 100%;
+  padding-top: 100px;
+  & > h4{
+    padding: 5px 30px;
+  }
+  &>h2{
+    font-size: 42px;
+  }
+  &__content{
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  &__content > .item{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    color: $text--color-2;
+    min-width: 25%;
+    margin: 55px;
+    
+  }
+  &__content img{
+    max-width: 100%;
+  }
+  &__content a{
+    margin: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: $text--color-2;
+  }
+  &__content p{
+    margin: 20px;
+  }
+}
+
 @keyframes slide {
   0% {
     left: 0px;
@@ -93,6 +135,12 @@
   .section-vision {
     &__content > h4 {
       width: 50%;
+    }
+  }
+  .section-activity{
+    &__content > .item{
+       margin: 30px;
+       min-width: 80%;
     }
   }
 }
